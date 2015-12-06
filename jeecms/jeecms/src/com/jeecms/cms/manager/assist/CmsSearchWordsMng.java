@@ -4,8 +4,8 @@ import java.util.List;
 
 import net.sf.ehcache.Ehcache;
 
-import com.jeecms.common.page.Pagination;
 import com.jeecms.cms.entity.assist.CmsSearchWords;
+import com.jeecms.common.page.Pagination;
 
 public interface CmsSearchWordsMng {
 	public Pagination getPage(int pageNo, int pageSize);

@@ -1,27 +1,26 @@
 package com.jeecms.cms.statistic;
 
+import static com.jeecms.cms.statistic.CmsStatistic.COMMENT;
+import static com.jeecms.cms.statistic.CmsStatistic.CONTENT;
+import static com.jeecms.cms.statistic.CmsStatistic.GUESTBOOK;
+import static com.jeecms.cms.statistic.CmsStatistic.JOIN;
+import static com.jeecms.cms.statistic.CmsStatistic.MEMBER;
+import static com.jeecms.cms.statistic.CmsStatistic.THISMONTH;
+import static com.jeecms.cms.statistic.CmsStatistic.THISWEEK;
+import static com.jeecms.cms.statistic.CmsStatistic.THISYEAR;
+import static com.jeecms.cms.statistic.CmsStatistic.TIMEPATTERN;
+import static com.jeecms.cms.statistic.CmsStatistic.TODAY;
+import static com.jeecms.cms.statistic.CmsStatistic.YESTERDAY;
 import static java.util.Calendar.DATE;
 import static java.util.Calendar.DAY_OF_WEEK;
 import static java.util.Calendar.HOUR_OF_DAY;
 import static java.util.Calendar.MONTH;
 import static java.util.Calendar.YEAR;
-import static com.jeecms.cms.statistic.CmsStatistic.JOIN;
-import static com.jeecms.cms.statistic.CmsStatistic.TIMEPATTERN;
-import static com.jeecms.cms.statistic.CmsStatistic.MEMBER;
-import static com.jeecms.cms.statistic.CmsStatistic.CONTENT;
-import static com.jeecms.cms.statistic.CmsStatistic.COMMENT;
-import static com.jeecms.cms.statistic.CmsStatistic.GUESTBOOK;
-import static com.jeecms.cms.statistic.CmsStatistic.TODAY;
-import static com.jeecms.cms.statistic.CmsStatistic.YESTERDAY;
-import static com.jeecms.cms.statistic.CmsStatistic.THISWEEK;
-import static com.jeecms.cms.statistic.CmsStatistic.THISMONTH;
-import static com.jeecms.cms.statistic.CmsStatistic.THISYEAR;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

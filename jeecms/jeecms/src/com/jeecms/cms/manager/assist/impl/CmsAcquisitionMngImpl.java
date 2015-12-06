@@ -9,9 +9,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.jeecms.cms.dao.assist.CmsAcquisitionDao;
 import com.jeecms.cms.entity.assist.CmsAcquisition;
+import com.jeecms.cms.entity.assist.CmsAcquisition.AcquisitionResultType;
 import com.jeecms.cms.entity.assist.CmsAcquisitionHistory;
 import com.jeecms.cms.entity.assist.CmsAcquisitionTemp;
-import com.jeecms.cms.entity.assist.CmsAcquisition.AcquisitionResultType;
 import com.jeecms.cms.entity.main.Content;
 import com.jeecms.cms.entity.main.ContentExt;
 import com.jeecms.cms.entity.main.ContentTxt;

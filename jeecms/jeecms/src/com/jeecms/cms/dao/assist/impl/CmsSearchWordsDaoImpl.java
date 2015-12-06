@@ -5,12 +5,12 @@ import java.util.List;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Repository;
 
+import com.jeecms.cms.dao.assist.CmsSearchWordsDao;
+import com.jeecms.cms.entity.assist.CmsSearchWords;
 import com.jeecms.common.hibernate3.Finder;
 import com.jeecms.common.hibernate3.HibernateBaseDao;
 import com.jeecms.common.page.Pagination;
 import com.jeecms.common.util.ChineseCharToEn;
-import com.jeecms.cms.dao.assist.CmsSearchWordsDao;
-import com.jeecms.cms.entity.assist.CmsSearchWords;
 
 @Repository
 public class CmsSearchWordsDaoImpl extends HibernateBaseDao<CmsSearchWords, Integer> implements CmsSearchWordsDao {

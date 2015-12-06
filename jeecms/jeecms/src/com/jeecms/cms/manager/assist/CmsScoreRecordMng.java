@@ -2,8 +2,8 @@ package com.jeecms.cms.manager.assist;
 
 import java.util.Map;
 
-import com.jeecms.common.page.Pagination;
 import com.jeecms.cms.entity.assist.CmsScoreRecord;
+import com.jeecms.common.page.Pagination;
 
 public interface CmsScoreRecordMng {
 	public Pagination getPage(int pageNo, int pageSize);

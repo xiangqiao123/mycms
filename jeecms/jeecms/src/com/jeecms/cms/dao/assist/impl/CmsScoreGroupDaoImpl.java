@@ -3,12 +3,11 @@ package com.jeecms.cms.dao.assist.impl;
 import org.hibernate.Criteria;
 import org.springframework.stereotype.Repository;
 
+import com.jeecms.cms.dao.assist.CmsScoreGroupDao;
+import com.jeecms.cms.entity.assist.CmsScoreGroup;
 import com.jeecms.common.hibernate3.Finder;
 import com.jeecms.common.hibernate3.HibernateBaseDao;
 import com.jeecms.common.page.Pagination;
-import com.jeecms.cms.dao.assist.CmsScoreGroupDao;
-import com.jeecms.cms.entity.assist.CmsScoreGroup;
-import com.jeecms.cms.entity.assist.CmsVoteTopic;
 
 @Repository
 public class CmsScoreGroupDaoImpl extends HibernateBaseDao<CmsScoreGroup, Integer> implements CmsScoreGroupDao {

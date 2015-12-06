@@ -3,6 +3,7 @@ package com.jeecms.common.email;
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
 import java.util.Properties;
+
 import javax.mail.Address;
 import javax.mail.Authenticator;
 import javax.mail.Message;

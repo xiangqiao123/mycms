@@ -2,6 +2,7 @@ package com.jeecms.common.lucene;
 
 import java.math.BigDecimal;
 
+import org.apache.lucene.document.NumberTools;
 import org.apache.lucene.util.NumericUtils;
 import org.springframework.util.Assert;
 

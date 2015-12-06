@@ -1,8 +1,8 @@
 package com.jeecms.common.web.cos;
 
-import java.io.OutputStream;
 import java.io.FilterOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 /**
  * A <code>MacBinaryDecoderOutput</code> filters MacBinary files to normal 

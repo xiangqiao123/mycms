@@ -6,7 +6,6 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-
 import com.jeecms.cms.entity.assist.CmsJobApply;
 import com.jeecms.cms.entity.main.Channel;
 import com.jeecms.cms.entity.main.Content;

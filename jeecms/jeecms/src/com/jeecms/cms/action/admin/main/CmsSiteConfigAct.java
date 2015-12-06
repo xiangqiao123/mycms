@@ -1,7 +1,7 @@
 package com.jeecms.cms.action.admin.main;
 
-import static com.jeecms.cms.Constants.TPL_BASE;
 import static com.jeecms.cms.Constants.TPLDIR_INDEX;
+import static com.jeecms.cms.Constants.TPL_BASE;
 
 import java.util.List;
 

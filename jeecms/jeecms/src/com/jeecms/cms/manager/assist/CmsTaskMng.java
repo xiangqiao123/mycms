@@ -3,8 +3,8 @@ package com.jeecms.cms.manager.assist;
 import java.util.List;
 import java.util.Map;
 
-import com.jeecms.common.page.Pagination;
 import com.jeecms.cms.entity.assist.CmsTask;
+import com.jeecms.common.page.Pagination;
 
 public interface CmsTaskMng {
 	public Pagination getPage(Integer siteId,int pageNo, int pageSize);

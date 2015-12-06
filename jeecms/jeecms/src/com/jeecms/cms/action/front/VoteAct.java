@@ -1,6 +1,7 @@
 package com.jeecms.cms.action.front;
 
 import static com.jeecms.cms.Constants.TPLDIR_SPECIAL;
+import static com.jeecms.common.page.SimplePage.cpn;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -35,8 +36,6 @@ import com.jeecms.core.entity.CmsUser;
 import com.jeecms.core.web.WebErrors;
 import com.jeecms.core.web.util.CmsUtils;
 import com.jeecms.core.web.util.FrontUtils;
-
-import static com.jeecms.common.page.SimplePage.cpn;
 
 @Controller
 public class VoteAct {

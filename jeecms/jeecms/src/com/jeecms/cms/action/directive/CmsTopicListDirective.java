@@ -18,8 +18,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.jeecms.cms.entity.main.CmsTopic;
 import com.jeecms.cms.manager.main.CmsTopicMng;
 import com.jeecms.common.web.freemarker.DirectiveUtils;
-import com.jeecms.common.web.freemarker.ParamsRequiredException;
 import com.jeecms.common.web.freemarker.DirectiveUtils.InvokeType;
+import com.jeecms.common.web.freemarker.ParamsRequiredException;
 import com.jeecms.core.entity.CmsSite;
 import com.jeecms.core.web.util.FrontUtils;
 

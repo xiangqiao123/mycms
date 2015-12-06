@@ -5,11 +5,11 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.springframework.stereotype.Repository;
 
+import com.jeecms.cms.dao.assist.CmsScoreRecordDao;
+import com.jeecms.cms.entity.assist.CmsScoreRecord;
 import com.jeecms.common.hibernate3.Finder;
 import com.jeecms.common.hibernate3.HibernateBaseDao;
 import com.jeecms.common.page.Pagination;
-import com.jeecms.cms.dao.assist.CmsScoreRecordDao;
-import com.jeecms.cms.entity.assist.CmsScoreRecord;
 
 @Repository
 public class CmsScoreRecordDaoImpl extends HibernateBaseDao<CmsScoreRecord, Integer> implements CmsScoreRecordDao {

@@ -2,8 +2,8 @@ package com.jeecms.cms.manager.assist;
 
 import java.util.List;
 
-import com.jeecms.common.page.Pagination;
 import com.jeecms.cms.entity.assist.CmsOrigin;
+import com.jeecms.common.page.Pagination;
 
 public interface CmsOriginMng {
 	public Pagination getPage(int pageNo, int pageSize);

@@ -1,7 +1,7 @@
 package com.jeecms.cms.manager.assist;
 
-import com.jeecms.common.page.Pagination;
 import com.jeecms.cms.entity.assist.CmsJobApply;
+import com.jeecms.common.page.Pagination;
 
 public interface CmsJobApplyMng {
 	public Pagination getPage(Integer userId,Integer contentId,Integer siteId,boolean cacheable,int pageNo, int pageSize);

@@ -8,8 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.jeecms.common.hibernate3.Updater;
-import com.jeecms.common.page.Pagination;
 import com.jeecms.cms.dao.assist.CmsScoreRecordDao;
 import com.jeecms.cms.entity.assist.CmsScoreItem;
 import com.jeecms.cms.entity.assist.CmsScoreRecord;
@@ -17,6 +15,8 @@ import com.jeecms.cms.entity.main.Content;
 import com.jeecms.cms.manager.assist.CmsScoreItemMng;
 import com.jeecms.cms.manager.assist.CmsScoreRecordMng;
 import com.jeecms.cms.manager.main.ContentMng;
+import com.jeecms.common.hibernate3.Updater;
+import com.jeecms.common.page.Pagination;
 
 @Service
 @Transactional

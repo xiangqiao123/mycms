@@ -26,8 +26,8 @@ import com.jeecms.common.security.BadCredentialsException;
 import com.jeecms.common.security.UsernameNotFoundException;
 import com.jeecms.common.security.encoder.PwdEncoder;
 import com.jeecms.core.dao.UnifiedUserDao;
-import com.jeecms.core.entity.UnifiedUser;
 import com.jeecms.core.entity.Config.ConfigLogin;
+import com.jeecms.core.entity.UnifiedUser;
 import com.jeecms.core.manager.ConfigMng;
 import com.jeecms.core.manager.UnifiedUserMng;
 

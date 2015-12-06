@@ -1,5 +1,7 @@
 package com.jeecms.core.action.front;
 
+import static com.jeecms.cms.Constants.SNAP_PATH;
+
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -25,7 +27,6 @@ import com.jeecms.common.ueditor.LocalizedMessages;
 import com.jeecms.common.upload.UploadUtils;
 import com.jeecms.common.web.ResponseUtils;
 import com.jeecms.common.web.springmvc.RealPathResolver;
-import static com.jeecms.cms.Constants.SNAP_PATH;
 
 @SuppressWarnings("serial")
 public class SnapScreenServlet extends HttpServlet {

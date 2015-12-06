@@ -2,6 +2,7 @@ package com.jeecms.cms.statistic.workload;
 
 
 import java.util.Date;
+
 import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
 

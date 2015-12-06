@@ -1,5 +1,20 @@
 package com.jeecms.cms.service;
 
+import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_BAIDU;
+import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_BING;
+import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_GOOGLE;
+import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_SO;
+import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_SOGOU;
+import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_SOSO;
+import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_YAHOO;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_ALL;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_AREA;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_ENGINE;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_KEYWORD;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_LINK;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_SOURCE;
+import static com.jeecms.common.util.ParseURLKeyword.getKeyword;
+
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -9,7 +24,6 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import static com.jeecms.common.util.ParseURLKeyword.getKeyword;
 import net.sf.ehcache.Ehcache;
 import net.sf.ehcache.Element;
 
@@ -36,21 +50,6 @@ import com.jeecms.common.web.springmvc.MessageResolver;
 import com.jeecms.core.entity.CmsSite;
 import com.jeecms.core.manager.CmsSiteMng;
 import com.jeecms.core.web.util.CmsUtils;
-
-import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_BAIDU;
-import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_GOOGLE;
-import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_YAHOO;
-import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_BING;
-import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_SOGOU;
-import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_SOSO;
-import static com.jeecms.cms.entity.assist.CmsSiteAccess.ENGINE_SO;
-
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_ALL;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_SOURCE;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_ENGINE;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_LINK;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_KEYWORD;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_AREA;
 
 @Service
 public class CmsSiteFlowCacheImpl implements CmsSiteFlowCache, DisposableBean {

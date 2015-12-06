@@ -3,7 +3,6 @@ package com.jeecms.core.entity.base;
 import java.io.Serializable;
 
 import com.jeecms.core.entity.CmsLog;
-import com.jeecms.core.entity.CmsSite;
 
 
 /**

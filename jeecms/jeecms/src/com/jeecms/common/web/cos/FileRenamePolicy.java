@@ -1,6 +1,6 @@
 package com.jeecms.common.web.cos;
 
-import java.io.*;
+import java.io.File;
 
 /**
  * An interface to provide a pluggable file renaming policy, particularly
