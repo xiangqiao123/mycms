@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="jeecms" default="run" basedir=".">
+<property name="src" value="src"/>
+<property name="dest" value="WebRoot/WEB-INF/classes"/>
+
+<target name="compile" >
+   <javac srcdir="${src}" destdir="${dest}"/>
+</target>
+
+<target name="run" depends="compile">
+  
+</target>
+</project>
