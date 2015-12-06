@@ -1,13 +1,41 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="jeecms" default="run" basedir=".">
-<property name="src" value="src"/>
-<property name="dest" value="WebRoot/WEB-INF/classes"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="jeecms">
+	<property name="build.class" value="./WebRoot/WEB-INF/classes" />
+	<property name="src" value="./src" />
+	<property name="lib" value="./WebRoot/WEB-INF/lib" />
+	
+	
+	<!--定义CLASSPACH,编译时用到你外部加入的包-->
+	<path id="classpath">
+		<pathelement location="${src}" />
+		<fileset dir="${lib}" includes="***.jar" />
+	</path>
 
-<target name="compile" >
-   <javac srcdir="${src}" destdir="${dest}"/>
-</target>
+	<!--删除任务-->  
+    <target name="clean" description="删除">  
+        <echo message="删除目录" />  
+        <delete dir="${build.class}" />  
+    </target>  
+	  
+    <!--创建一个临时目录-->  
+    <target name="init" description="创建目录" depends="clean">  
+        <echo message="创建目录--以执行" />  
+        <mkdir dir="${build.class}" />  
+    </target>  
 
-<target name="run" depends="compile">
-  
-</target>
+	<!--编译java源文件-->
+	<target name="compile" description="编译文件" depends="init">
+		<echo message="编译文件" />
+		<javac srcdir="${src}" destdir="${build.class}">
+			<classpath refid="classpath" />
+			<compilerarg line="-encoding UTF-8 " />
+		</javac>
+		<copy todir="${build.class}">
+				<fileset dir="${src}" excludes="**/*.java" />
+			</copy>
+	</target>
+	
+	<target name="run"  depends="compile">
+	
+	</target>
 </project>
