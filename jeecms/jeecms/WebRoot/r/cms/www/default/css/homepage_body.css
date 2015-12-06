@@ -1,0 +1,54 @@
+/*--------------------1.首页CSS--------------------*/
+/*焦点图代码*/
+.mt4{ margin-top:4px;}
+
+.w198{ float:left; width:198px;}
+.w200{ float:left; width:200px;}
+.w205{ float:right; width:205px;}
+.w230{ float:left; width:230px; margin-right:20px;}
+.w310{ float:left; width: 310px; margin-left: 20px;}
+.w315{ float:left; width:310px;}
+.w535{ float:left; width:535px; margin-left:10px;}
+.w555{ float:left; width:555px;}
+.w555 .w300{float: left; width: 300px; margin-left: 15px;}
+.w555bg{ float:left; width:555px; margin-left:10px; margin-right:10px;}
+.w660{ float: left; width: 660px;}
+
+.TableTop{ background-image:url(/res/jeecms/img/xinjiang/table_top.gif); height:35px; width:100%; background-size:100% 100%;}
+.TableMiddle{ background-image:url(/res/jeecms/img/xinjiang/table_middle.gif); width:100%; background-size:100% 100%;}
+.TableBottom{ background-image:url(/res/jeecms/img/xinjiang/table_bottom.gif); height:30px; width:100%; background-size:100% 100%;}
+
+.MoxiangyunLeft/*水墨祥云*/{ background-image:url(/res/jeecms/img/xinjiang/moxiangyun_left.gif); 
+							 height: 32px; width: 40%; background-size:100% 100%; background-repeat:no-repeat; float:left;}
+.MoxiangyunRight/*水墨祥云*/{ background-image:url(/res/jeecms/img/xinjiang/moxiangyun_right.gif); 
+							 height: 32px; width: 60%; background-size:100% 100%; float:left;}
+
+.BgBlock/*板块背景*/{ background-image:url(/res/jeecms/img/xinjiang/bg_block.gif); height:160px; width:100%; float:left;
+						background-size:100% 100%;}
+.PicBlock/*图片展示块*/{ height:105px; width:127px; float:left; background-size:100% 100%; margin-top:2px; margin-right:8px;}
+
+.XiangyunLeft/*祥云*/{ background-image:url(/res/jeecms/img/xinjiang/xiangyun_left.gif); height:31px; width:63px;
+						background-size:100% 100%; float:left; margin:10px 0px;}
+.XiangyunTitle/*祥云*/{ background-image:url(/res/jeecms/img/xinjiang/xiangyun_title.gif); height:31px; 
+						background-size:100% 100%; float:left; margin:10px 0px;}
+.XiangyunRight/*祥云*/{ background-image:url(/res/jeecms/img/xinjiang/xiangyun_right.gif); height:31px; width:15px; 
+						background-size:100% 100%; float:left; margin:10px 0px;}
+
+.BookBlockTopLeft/*书*/{ background-image:url(/res/jeecms/img/xinjiang/book.gif); height:41px; width:47px; background-size:100% 100%;
+						 float:left;}
+.BookBlockTopRight/*书*/{ background-image:url(/res/jeecms/img/xinjiang/book_line.gif); height:3px; width:183px; 
+						  background-size:100% 100%; float: left; margin-top: 29px; margin-bottom: 9px;}
+.BookBlock/*书·列表*/{ width:98%; margin:7px 2px;}
+.BookBlock ul{ width:100%; margin-top:41px;}
+.BookBlock ul li{ line-height:25px; background:url(../img/index/li-icon1.gif) no-repeat 1px 10px; text-indent:10px;
+					  border-bottom: 1px dashed #909090;}
+.BookBlock ul li a{ font-size:12px;}
+
+
+p/*首页段落*/{width: 95%; height: 95%; font-size: small; padding-left: 1%; line-height: 15px; margin: 0px 5px; overflow:hidden;
+				text-overflow: clip;}
+.BlockTitle/*模块的标题样式*/{padding-top: 15px; margin-left: 10px; font-weight: bold; font-size: large; font-family: 方正舒体;}
+
+.LianJie/*链接图样式*/{margin: 8px 0px 6px 6px; height:48px; width: 145px;}
+
+.More/*更多*/{color: #877135; font-size:small; float:right;}

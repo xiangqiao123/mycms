@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>${channel.title!channel.name} - ${site.name}</title>
+<head>
+<!--[if lt IE 9]>
+<script src="${resSys}/html5.js" type="text/javascript"></script>
+<![endif]-->
+<!-- <link href="/${res}/css/html5.css" rel="stylesheet" type="text/css"/> -->
+<script src="/${res}/js/indexshow.js" type="text/javascript"></script>
+<script src="/${res}/js/imgFlip.js" type="text/javascript"></script>
+
+<link href="/${res}/css/news.css" rel="stylesheet" type="text/css"/>
+<link href="${resSys}/front.css" rel="stylesheet" type="text/css"/>
+<link href="${resSys}/jqueryUI/jquery.ui.css" rel="stylesheet" type="text/css"/>
+<link href="/${res}/css/homepage_body.css" rel="stylesheet" type="text/css"/>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/jqueryUI/jquery-ui.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+    Cms.siteFlow("${base}", location.href, document.referrer);
+});
+</script>
+
+</head>
+<body>
+<div class="container">
+        [#include "../include/top.html"/]   
+
+    <div class="main">   
+        <div class="w660">
+            <!-- 旅游零售业务 宽230_begin -->
+            [@cms_channel_list tpl='0' parentId=channel.id]
+                [#list tag_list as a]
+                    <div class="w310">
+                        <div class="BookBlockTopLeft"></div>
+                        <div class="BookBlockTopRight" style="width:80%">
+                            <div class="BlockTitle" style="margin-top: -25px;">${a.name}</div>
+                            <div><a href="${a.url}" class="More">more>></a></div>
+                        </div>
+                        <div class="BookBlock">
+                            <ul style="min-height:180px;">
+                                [@cms_content_list count='6' orderBy='6' titLen='19' channelId=a.id  channelOption='1']
+                                [#list tag_list as b]
+                                    <li style="width: 93%; margin-left: 2%;">
+                                        <a href="${b.url}" title="${b.title}" target="_blank">
+                                            [@text_cut s=b.title len=titLen /]
+                                        </a>
+                                    </li>
+                                [/#list]
+                                [#assign count = 6 - tag_list?size]
+                                [#list 0..count as l]
+                                    [#if l_index < count]
+                                        <li style="width: 93%; margin-left: 2%; height:26px;"></li>
+                                    [/#if]
+                                [/#list]
+                                [/@cms_content_list]
+                            </ul>
+                        </div>
+                    </div>
+                [/#list]
+            [/@cms_channel_list]
+            <!-- 旅游零售业务 宽230_end -->
+        </div>
+        <!-- 右栏_begin -->
+        [#include "../include/right_news.html"/]
+        <!-- 右栏_end -->
+    </div>
+    [#include "../include/footer.html"/]
+</div>
+</body>
+</html>

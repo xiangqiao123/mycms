@@ -1,0 +1,71 @@
+<div class="w300 mt10">
+    <!-- 热点新闻_begin -->
+    <div class="rim04">
+	    <div class="tableTop"><div style="padding-top:16px;text-align:center;font-family:方正舒体;font-size:large;font-weight:bold;">热门话题</div></div>
+		<div class="tableMiddle">
+			<div class="jrhtCon">
+				<!--<img src="../../${res}/img/news/jrht.gif"/>-->
+				<div class="clear"></div>
+				<div class="Q-tpList">
+					[@cms_content_list count='1' orderBy='8' typeId='2' titLen='18' channelId='11,12,13,14' channelOption='1']
+					[#list tag_list as a]
+					<em><a href="${a.url}" title="${a.title}" target="_blank">[@text_cut s=a.title len=titLen /]</a></em>
+					<div class="Q-tpWrap">
+						<a href="${a.url}" target="_blank">
+							<img src="${a.typeImg!site.defImg}" alt="${a.title}" / class="tpListPic">
+						</a>
+						<p>[@text_cut s=a.desc len=30 append='...'/]<span class="cBlue"><a href="${a.url}" title="${a.title}" target="_blank">详细&gt;&gt;</a></span></p>
+					</div>
+					[/#list]
+					[/@cms_content_list]
+				</div>
+				<div class="clear-10"></div>
+				<div class="jrhtList">
+					<ul>
+					[@cms_content_list count='6' orderBy='6' titLen='18' channelId='11,12,13,14'  channelOption='1']
+					[#list tag_list as a]
+					<li>
+						<a href="${a.url}" title="${a.title}" target="_blank">
+							[@text_cut s=a.title len=titLen /]
+						</a>
+					</li>
+					[/#list]
+					[/@cms_content_list]
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="tableBottom"></div>
+    </div>
+    <!-- 热点新闻_end -->
+    <div class="clear-10"></div>
+    <!--集团动态_begin -->
+    <div class="rim04">
+	    <div class="tableTop"><div style="padding-top:16px;text-align:center;font-family:方正舒体;font-size:large;font-weight:bold;">公司动态</div></div>
+        <div class="tableMiddle">
+			<div class="cjbdCon">
+				<div class="jrhtList">
+					<ul>
+					[@cms_content_list count='8' orderBy='4' titLen='18' channelId='14'  channelOption='1']
+					[#list tag_list as a]
+					<li>
+						<a href="${a.url}" title="${a.title}" target="_blank">
+							[@text_cut s=a.title len=titLen /]
+						</a>
+					</li>
+					[/#list]
+					[/@cms_content_list]
+					</ul>
+				</div>		
+			</div>
+        </div>
+		<div class="tableBottom"><div style="padding-top:10px;padding-left:220px;">
+			<em>[@cms_channel id='14']<a href="${tag_bean.url}" target="_blank">更多>></a>[/@cms_channel]</em>
+		</div>
+                </div>
+    </div>
+    <!-- 集团动态_end -->
+    <div class="clear-10">
+	</div>
+    
+</div>

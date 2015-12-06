@@ -1,0 +1,27 @@
+﻿<div class="clear-10" ></div>
+<div class="footBg"   style="margin-top:20px;>
+    <div class="footBglm">
+    <a target="_blank" href="${base}/contact/index.jhtml">联系我们</a> - 
+    <a target="_blank" href="${base}/job/index.jhtml">诚聘英才</a> -
+
+    <a target="_blank" href="${base}/cooperation/index.jhtml">合作服务</a> - 
+    <a onclick="SetHome(window.location)"href="javascript:void(0)">设为首页</a> - 
+    <a onclick="AddFavorite(window.location,document.title)"href="javascript:void(0)">加入收藏</a> - 
+<!--    <a target="_blank" href="${base}/jeeadmin/xlt/index.do">管理登录</a> -->
+   
+ <select name="S1" onChange="window.open(this.value)">
+    <option value="">友情链接</option>
+	    [@cms_friendlink_list]
+        [#list tag_list as link]
+        <option value = ${link.domain} >
+           ${link.name}
+        </option>
+        [/#list]
+        [/@cms_friendlink_list]
+    </select>
+
+    </div>
+    <div class="clear-10" style="text-align: center;margin-top:10px">
+            鹏飞管业 版权所有 Copyright &copy; 2015-2016, All Rights Reserved  pv总量<span id="pv"></span>访客数总量<span id="visitor"></span>
+    </div>
+</div>

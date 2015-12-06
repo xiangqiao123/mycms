@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>${channel.title!channel.name}-${site.name}</title>
+<head>
+<!--[if lt IE 9]>
+<script src="${resSys}/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link href="/${res}/css/html5.css" rel="stylesheet" type="text/css"/>
+<link href="${resSys}/front.css" rel="stylesheet" type="text/css"/>
+<link href="${resSys}/jqueryUI/jquery.ui.css" rel="stylesheet" type="text/css"/>
+<link href="/${res}/css/groupAdd.css" rel="stylesheet" type="text/css"/>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/jqueryUI/jquery-ui.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(function() {
+    Cms.siteFlow("${base}", location.href, document.referrer);
+});
+</script>
+<style>
+.bgxiangyun{
+    background-image: url('/res/jeecms/img/xinjiang/xiangyun_title.gif');
+    background-size: 70px 31px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+        [#include "../include/top.html"/]   
+	<div class="main">
+	
+    <div class="hundred100 mt10">
+        <div class="clear-10"></div>
+        <table  width=”850″ border=”1″ cellspacing=”0″ cellpadding=”2″align=center >
+            <tr>
+               <td class="moxiangyunLeft"></td>
+               <td class="moxiangyunRight"><strong><div style="padding-top:15px; padding-left:10px">公司概况</div></strong></td>
+             </tr>
+        </table>
+        <div class="clear"></div>
+		<!-- start -->
+		[@cms_content_list count='6' orderBy='4' titLen='8' channelId='83' channelOption='1']
+		[#list tag_list as a]
+		<div class="clear-10"></div>
+		<div class="CommonArea">
+			<a href="${a.url}" target="_blank" class="AreaPic">
+			<img src="${a.titleImg!site.defImg}" alt="公司简介" width="100%">
+			</a>
+		</div>
+							                 
+		<div class="listGroupInfo">
+			<ul>
+				<li>
+				${a.txt1}
+				</li>
+				<li>
+				<div style="position:bottom">
+					<a href="${a.url}" target="_blank">
+					详细查看
+					</a>  
+				</div>
+				</li>
+			</ul>				      
+		</div>
+		[/#list]
+		[/@cms_content_list]
+	
+		
+            <!-- end -->
+
+    <div class="clear-10"></div>
+    <div class="clear-10"></div>
+    <div class="clear-10"></div>
+
+    <div class="hundred100 mt10">
+		<div class="clear-10"></div>
+		<table  width=”850″ border=”1″ cellspacing=”0″ cellpadding=”2″align=center >
+            <tr>
+               <td class="moxiangyunLeft"></td>
+               <td class="moxiangyunRight"><strong><div style="padding-top:15px; padding-left:10px">公司文化</div><strong></td>
+             </tr>
+        </table>
+           
+        <div class="clear"></div>
+            
+        [@cms_content_list count='6' orderBy='4' titLen='8' channelId='94' channelOption='1']
+		[#list tag_list as a]
+		<!-- start -->
+		<div class="clear-10"></div>
+		<div class="CommonArea">
+			<a href="${a.url}" target="_blank" class="AreaPic">
+			<img src="${a.titleImg!site.defImg}" alt="公司文化" width="100%">
+			</a>
+		</div>					
+		<div class="listGroupInfo">
+			<ul>
+				<li>
+				${a.txt1}
+				</li>			
+				<li>
+					<div style="float:bottom">
+						<a href="${a.url}" target="_blank">
+						详细查看
+						</a>                    
+					</div>
+				</li>
+			</ul>
+		</div>
+		[/#list]
+		[/@cms_content_list]
+	</div>
+		
+            <!-- end -->
+
+	
+</div>
+    [#include "../include/footer.html"/]
+</div>
+</body>
+</html>
