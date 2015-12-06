@@ -1,16 +1,15 @@
 package com.jeecms.core.entity;
 
-import static com.jeecms.cms.Constants.LIBRARY_PATH;
 import static com.jeecms.cms.Constants.RES_PATH;
-import static com.jeecms.cms.Constants.TPLDIR_INDEX;
 import static com.jeecms.cms.Constants.TPL_BASE;
+import static com.jeecms.cms.Constants.TPLDIR_INDEX;
 import static com.jeecms.cms.Constants.TPL_SUFFIX;
 import static com.jeecms.cms.Constants.UPLOAD_PATH;
+import static com.jeecms.cms.Constants.LIBRARY_PATH;
 import static com.jeecms.common.web.Constants.INDEX;
 import static com.jeecms.common.web.Constants.SPT;
 
 import java.util.Collection;
-
 import org.apache.commons.lang.StringUtils;
 
 import com.jeecms.core.entity.base.BaseCmsSite;

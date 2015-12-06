@@ -1,12 +1,5 @@
 package com.jeecms.cms.manager.assist.impl;
 
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_ALL;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_AREA;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_ENGINE;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_KEYWORD;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_LINK;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_SOURCE;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -23,6 +16,14 @@ import com.jeecms.cms.manager.assist.CmsSiteAccessMng;
 import com.jeecms.cms.manager.assist.CmsSiteAccessStatisticMng;
 import com.jeecms.common.page.Pagination;
 import com.jeecms.core.manager.CmsSiteMng;
+
+
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_ALL;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_SOURCE;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_ENGINE;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_LINK;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_KEYWORD;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_AREA;
 
 /**
  * @author Tom

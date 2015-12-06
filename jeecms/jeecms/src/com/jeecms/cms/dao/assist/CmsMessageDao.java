@@ -1,7 +1,6 @@
 package com.jeecms.cms.dao.assist;
 
 import java.util.Date;
-
 import com.jeecms.cms.entity.assist.CmsMessage;
 import com.jeecms.common.hibernate3.Updater;
 import com.jeecms.common.page.Pagination;

@@ -5,11 +5,11 @@ import java.util.List;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Repository;
 
-import com.jeecms.cms.dao.assist.CmsOriginDao;
-import com.jeecms.cms.entity.assist.CmsOrigin;
 import com.jeecms.common.hibernate3.Finder;
 import com.jeecms.common.hibernate3.HibernateBaseDao;
 import com.jeecms.common.page.Pagination;
+import com.jeecms.cms.dao.assist.CmsOriginDao;
+import com.jeecms.cms.entity.assist.CmsOrigin;
 
 @Repository
 public class CmsOriginDaoImpl extends HibernateBaseDao<CmsOrigin, Integer> implements CmsOriginDao {

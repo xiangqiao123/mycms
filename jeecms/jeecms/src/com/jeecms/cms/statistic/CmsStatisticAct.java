@@ -1,19 +1,5 @@
 package com.jeecms.cms.statistic;
 
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_ALL;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_AREA;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_LINK;
-import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_SOURCE;
-import static com.jeecms.cms.statistic.CmsStatistic.CHANNELID;
-import static com.jeecms.cms.statistic.CmsStatistic.COMMENT;
-import static com.jeecms.cms.statistic.CmsStatistic.CONTENT;
-import static com.jeecms.cms.statistic.CmsStatistic.GUESTBOOK;
-import static com.jeecms.cms.statistic.CmsStatistic.ISREPLYED;
-import static com.jeecms.cms.statistic.CmsStatistic.MEMBER;
-import static com.jeecms.cms.statistic.CmsStatistic.SITEID;
-import static com.jeecms.cms.statistic.CmsStatistic.USERID;
-import static com.jeecms.common.page.SimplePage.cpn;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -49,6 +35,21 @@ import com.jeecms.common.web.springmvc.MessageResolver;
 import com.jeecms.core.entity.CmsUser;
 import com.jeecms.core.manager.CmsUserMng;
 import com.jeecms.core.web.util.CmsUtils;
+
+import static com.jeecms.cms.statistic.CmsStatistic.MEMBER;
+import static com.jeecms.cms.statistic.CmsStatistic.CONTENT;
+import static com.jeecms.cms.statistic.CmsStatistic.COMMENT;
+import static com.jeecms.cms.statistic.CmsStatistic.GUESTBOOK;
+import static com.jeecms.cms.statistic.CmsStatistic.SITEID;
+import static com.jeecms.cms.statistic.CmsStatistic.ISREPLYED;
+import static com.jeecms.cms.statistic.CmsStatistic.USERID;
+import static com.jeecms.cms.statistic.CmsStatistic.CHANNELID;
+import static com.jeecms.common.page.SimplePage.cpn;
+
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_ALL;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_SOURCE;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_LINK;
+import static com.jeecms.cms.entity.assist.CmsSiteAccessStatistic.STATISTIC_AREA;
 
 @Controller
 public class CmsStatisticAct {

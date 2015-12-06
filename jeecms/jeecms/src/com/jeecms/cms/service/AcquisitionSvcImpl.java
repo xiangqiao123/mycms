@@ -25,9 +25,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.jeecms.cms.entity.assist.CmsAcquisition;
-import com.jeecms.cms.entity.assist.CmsAcquisition.AcquisitionResultType;
 import com.jeecms.cms.entity.assist.CmsAcquisitionHistory;
 import com.jeecms.cms.entity.assist.CmsAcquisitionTemp;
+import com.jeecms.cms.entity.assist.CmsAcquisition.AcquisitionResultType;
 import com.jeecms.cms.entity.main.Content;
 import com.jeecms.cms.entity.main.ContentCount;
 import com.jeecms.cms.manager.assist.CmsAcquisitionHistoryMng;

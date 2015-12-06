@@ -4,9 +4,9 @@ import java.util.Date;
 import java.util.List;
 
 import com.jeecms.cms.entity.assist.CmsAcquisition;
-import com.jeecms.cms.entity.assist.CmsAcquisition.AcquisitionResultType;
 import com.jeecms.cms.entity.assist.CmsAcquisitionHistory;
 import com.jeecms.cms.entity.assist.CmsAcquisitionTemp;
+import com.jeecms.cms.entity.assist.CmsAcquisition.AcquisitionResultType;
 import com.jeecms.cms.entity.main.Content;
 
 public interface CmsAcquisitionMng {

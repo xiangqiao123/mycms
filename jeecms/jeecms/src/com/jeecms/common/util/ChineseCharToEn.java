@@ -2,7 +2,7 @@ package com.jeecms.common.util;
 /**
  * @author Tom
  */
-import java.io.UnsupportedEncodingException;
+import java.io.UnsupportedEncodingException;  
 
 /** 
  * 取得给定汉字串的首字母串,即声母串 

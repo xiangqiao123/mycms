@@ -17,8 +17,8 @@ import org.apache.commons.lang.StringUtils;
 import com.jeecms.cms.action.directive.abs.AbstractCmsCommentDirective;
 import com.jeecms.common.page.Pagination;
 import com.jeecms.common.web.freemarker.DirectiveUtils;
-import com.jeecms.common.web.freemarker.DirectiveUtils.InvokeType;
 import com.jeecms.common.web.freemarker.ParamsRequiredException;
+import com.jeecms.common.web.freemarker.DirectiveUtils.InvokeType;
 import com.jeecms.core.entity.CmsSite;
 import com.jeecms.core.web.util.FrontUtils;
 

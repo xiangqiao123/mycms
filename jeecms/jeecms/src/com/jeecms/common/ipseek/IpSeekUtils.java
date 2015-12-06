@@ -1,7 +1,6 @@
 package com.jeecms.common.ipseek;
 
 import java.io.IOException;
-
 import org.apache.commons.lang.StringUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;

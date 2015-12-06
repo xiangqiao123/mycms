@@ -2,11 +2,11 @@ package com.jeecms.cms.dao.assist.impl;
 
 import org.springframework.stereotype.Repository;
 
-import com.jeecms.cms.dao.assist.CmsJobApplyDao;
-import com.jeecms.cms.entity.assist.CmsJobApply;
 import com.jeecms.common.hibernate3.Finder;
 import com.jeecms.common.hibernate3.HibernateBaseDao;
 import com.jeecms.common.page.Pagination;
+import com.jeecms.cms.dao.assist.CmsJobApplyDao;
+import com.jeecms.cms.entity.assist.CmsJobApply;
 
 @Repository
 public class CmsJobApplyDaoImpl extends HibernateBaseDao<CmsJobApply, Integer>

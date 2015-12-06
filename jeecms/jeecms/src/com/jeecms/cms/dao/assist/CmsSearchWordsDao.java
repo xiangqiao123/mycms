@@ -2,9 +2,9 @@ package com.jeecms.cms.dao.assist;
 
 import java.util.List;
 
-import com.jeecms.cms.entity.assist.CmsSearchWords;
 import com.jeecms.common.hibernate3.Updater;
 import com.jeecms.common.page.Pagination;
+import com.jeecms.cms.entity.assist.CmsSearchWords;
 
 public interface CmsSearchWordsDao {
 	public Pagination getPage(int pageNo, int pageSize);

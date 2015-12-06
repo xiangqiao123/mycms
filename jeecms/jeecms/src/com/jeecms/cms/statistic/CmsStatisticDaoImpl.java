@@ -1,10 +1,9 @@
 package com.jeecms.cms.statistic;
 
-import static com.jeecms.cms.statistic.CmsStatistic.CHANNELID;
-import static com.jeecms.cms.statistic.CmsStatistic.ISREPLYED;
 import static com.jeecms.cms.statistic.CmsStatistic.SITEID;
+import static com.jeecms.cms.statistic.CmsStatistic.ISREPLYED;
 import static com.jeecms.cms.statistic.CmsStatistic.USERID;
-
+import static com.jeecms.cms.statistic.CmsStatistic.CHANNELID;
 import java.util.Map;
 
 import org.springframework.stereotype.Repository;
